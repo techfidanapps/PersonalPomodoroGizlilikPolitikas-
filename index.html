@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — Personal Pomodoro</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --surface:#ffffff; --text:#1f2328; --muted:#5c6470;
+    --accent:#c0392b; --border:#e6e3de; --soft:#f5f2ee;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#15171a; --surface:#1d2023; --text:#e8e6e3; --muted:#a2a8b0;
+           --accent:#e0675a; --border:#2d3135; --soft:#232629; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.7; font-size:16px;
+  }
+  .wrap{max-width:780px; margin:0 auto; padding:16px;}
+  header{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:28px 26px; margin:24px 0 20px;
+  }
+  .badge{
+    display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); font-weight:700; margin-bottom:10px;
+  }
+  h1{font-size:28px; line-height:1.25; margin:0 0 8px;}
+  .meta{color:var(--muted); font-size:14px; margin:0;}
+  main{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:8px 26px 28px;
+  }
+  h2{font-size:20px; margin:32px 0 10px; padding-top:4px;}
+  h3{font-size:16px; margin:22px 0 6px;}
+  ul{padding-left:20px;}
+  li{margin:6px 0;}
+  .note{
+    background:var(--soft); border-left:3px solid var(--accent);
+    padding:14px 16px; border-radius:0 8px 8px 0; margin:18px 0;
+    font-size:15px;
+  }
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:15px;}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top;}
+  th{background:var(--soft); font-weight:600;}
+  a{color:var(--accent);}
+  hr{border:0; border-top:1px solid var(--border); margin:40px 0;}
+  footer{color:var(--muted); font-size:14px; text-align:center; padding:24px 0 40px;}
+  .lang-sep{
+    text-align:center; color:var(--muted); font-size:13px; letter-spacing:.1em;
+    text-transform:uppercase; margin:36px 0 0;
+  }
+  @media (max-width:520px){
+    h1{font-size:23px} header,main{padding-left:18px; padding-right:18px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="badge">Personal Pomodoro</div>
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">Son güncelleme: 1 Ekim 2026 &nbsp;·&nbsp; Yürürlük tarihi: 1 Ekim 2026</p>
+</header>
+
+<main>
+
+<p>Bu gizlilik politikası, <strong>TechFidan Apps</strong> tarafından geliştirilen <strong>Personal Pomodoro</strong> mobil uygulamasının ("Uygulama") kişisel verileri nasıl işlediğini açıklar.</p>
+
+<div class="note">
+  <strong>Özet:</strong> Uygulama hesap açmadan tam olarak çalışır ve bu durumda hiçbir veriniz cihazınızdan çıkmaz. Hesap açsanız bile, seanslarınız ve proje adlarınız <strong>yalnızca Premium üyeliğiniz varsa</strong> buluta yedeklenir; ücretsiz kullanımda sunucuya giden tek şey, jeton hesabı için günlük toplam odak dakikanızdır. Uygulama <strong>bu sürümde reklam göstermez</strong>, reklam kimliğinizi toplamaz, analitik veya izleme araçları kullanmaz. İleride reklam eklenmesi hâlinde bu politika aynı sürümle birlikte güncellenecektir (bkz. madde 13).
+</div>
+
+<h2>1. Hesap Açmadan Kullanım</h2>
+<p>Uygulamanın tüm temel işlevleri — zamanlayıcı, projeler, istatistikler, plan panosu, seri takibi — hesap açmadan kullanılabilir. Bu modda odak seanslarınız, proje adlarınız, ayarlarınız ve istatistikleriniz <strong>yalnızca cihazınızın yerel veritabanında</strong> saklanır ve hiçbir sunucuya gönderilmez.</p>
+
+<h2>2. Hesap Açtığınızda Toplanan Veriler</h2>
+
+<h3>2.1 Hesap bilgileri</h3>
+<ul>
+  <li><strong>E-posta adresi ve şifre:</strong> Kayıt ve giriş için kullanılır. Şifreniz tarafımızca görülemez; kimlik doğrulama sağlayıcımız tarafından şifrelenmiş özet (hash) olarak saklanır.</li>
+</ul>
+
+<h3>2.2 Ücretsiz üyelikte sunucuya giden tek veri</h3>
+<p>Hesabınız olsa dahi, Premium üyeliğiniz yoksa seanslarınız ve proje adlarınız <strong>sunucuya gönderilmez</strong>; cihazınızda kalır. Sunucuya giden tek bilgi şudur:</p>
+<ul>
+  <li><strong>Günlük toplam odak dakikası:</strong> Örneğin "3 Ekim günü toplam 85 dakika". Bu, uygulama içi jeton ödülünüzün hesaplanabilmesi için gereklidir. Seansların tek tek süreleri, saatleri, proje adları veya hangi görevle yapıldığı bilgisi gönderilmez.</li>
+</ul>
+
+<h3>2.3 Premium üyelikte sunucuya eşlenen veriler</h3>
+<p>Premium üyeliğiniz varsa bulut yedekleme devreye girer ve cihazınızdaki kayıtlar sunucuyla eşlenir. Gönderilen alanlar şunlardır:</p>
+<ul>
+  <li><strong>Odak seansı olayları:</strong> Olay tipi (başlatıldı / tamamlandı / yarıda bırakıldı), planlanan süre, fiilen odaklanılan süre, olayın gerçekleştiği zaman damgası ve cihazınızın saat diliminden hesaplanan yerel tarih.</li>
+  <li><strong>Proje adları:</strong> Oluşturduğunuz projelerin adları, oluşturulma tarihi ve arşiv durumu. Proje adları sizin yazdığınız serbest metinlerdir; buraya kişisel bilgi yazmamanızı öneririz.</li>
+</ul>
+
+<h3>2.4 Her iki durumda da tutulan hesap kayıtları</h3>
+<ul>
+  <li><strong>Jeton bakiyesi ve işlem kayıtları:</strong> Uygulama içi ödül ekonomisinin işleyebilmesi için.</li>
+  <li><strong>Abonelik durumu:</strong> Üyelik katmanı ve bitiş tarihi (abonelik özelliği etkinleştirildiğinde).</li>
+</ul>
+
+<h3>2.5 Sunucuya hiçbir koşulda gönderilmeyen veriler</h3>
+<p>Aşağıdakiler Premium üyeliğiniz olsa dahi yalnızca cihazınızda kalır:</p>
+<ul>
+  <li>Seans öncesi yazdığınız <strong>niyet satırı</strong></li>
+  <li><strong>Plan panosu</strong> görevleri ve notları</li>
+  <li>Uygulama ayarları: tema, dil, ses, bildirim ve hatırlatma tercihleri</li>
+</ul>
+
+<div class="note">
+  <strong>Toplamadığımız veriler:</strong> Reklam kimliği, konum (GPS veya ağ tabanlı), rehber, fotoğraf ve galeri, dosyalar, mikrofon, kamera, sağlık verileri, mesajlar, çökme raporları ve kullanım analitiği. Uygulamada üçüncü taraf reklam, analitik veya izleme SDK'si bulunmamaktadır.
+</div>
+
+<h2>3. Uygulamanın Kullandığı İzinler</h2>
+<table>
+  <tr><th>İzin</th><th>Neden gerekli</th></tr>
+  <tr><td>İnternet</td><td>Hesap açtıysanız verilerin sunucuyla eşlenmesi</td></tr>
+  <tr><td>Bildirimler</td><td>Seans bitişi ve isteğe bağlı günlük hatırlatma</td></tr>
+  <tr><td>Kesin alarm</td><td>Zamanlayıcının uygulama kapalıyken de doğru anda bitmesi</td></tr>
+  <tr><td>Cihaz açılışında başlatma</td><td>Yeniden başlatma sonrası hatırlatmaların yeniden kurulması</td></tr>
+</table>
+
+<h2>4. Verileri Hangi Amaçla Kullanıyoruz</h2>
+<table>
+  <tr><th>Veri</th><th>Amaç</th><th>Hukuki dayanak</th></tr>
+  <tr><td>E-posta adresi</td><td>Hesap oluşturma, giriş doğrulama, şifre sıfırlama</td><td>Sözleşmenin ifası</td></tr>
+  <tr><td>Günlük toplam odak dakikası</td><td>Uygulama içi jeton ödülünün hesaplanması</td><td>Sözleşmenin ifası</td></tr>
+  <tr><td>Seans olayları ve proje adları (yalnızca Premium)</td><td>Cihazlar arası bulut yedekleme ve senkronizasyon</td><td>Sözleşmenin ifası</td></tr>
+  <tr><td>Jeton ve işlem kayıtları</td><td>Uygulama içi ödül sisteminin yürütülmesi</td><td>Sözleşmenin ifası</td></tr>
+  <tr><td>Abonelik durumu</td><td>Premium özelliklere erişim yetkilendirmesi</td><td>Sözleşmenin ifası</td></tr>
+  <tr><td>IP adresi (geçici)</td><td>Sunucu bağlantısı, güvenlik ve kötüye kullanımın önlenmesi</td><td>Meşru menfaat</td></tr>
+</table>
+
+<h2>5. Veriler Nerede Saklanıyor</h2>
+<ul>
+  <li><strong>Cihazınızda:</strong> Yerel veritabanı, uygulamanın özel depolama alanında tutulur. Ücretsiz kullanımda seanslarınızın ve projelerinizin tek kopyası buradadır. Uygulamayı kaldırdığınızda bu veriler silinir.</li>
+  <li><strong>Sunucuda:</strong> Hesap kaydınız, jeton bakiyeniz ve abonelik durumunuz; Premium üyeyseniz ayrıca seans ve proje kayıtlarınız, altyapı sağlayıcımız <strong>Supabase</strong> (Supabase Inc.) üzerinde barındırılan PostgreSQL veritabanında saklanır. Her tabloda satır düzeyinde güvenlik (Row Level Security) etkindir: her kullanıcı yalnızca kendi kayıtlarına erişebilir.</li>
+  <li><strong>Yurt dışına aktarım:</strong> Supabase sunucuları Türkiye dışında konumlanmaktadır. Hesap oluşturmanız hâlinde yukarıdaki veriler bu sunuculara aktarılır ve orada işlenir. Hesap açmamayı tercih ederek bu aktarımdan tamamen kaçınabilirsiniz.</li>
+</ul>
+
+<h2>6. Üçüncü Taraflar</h2>
+<p>Kişisel verilerinizi <strong>satmıyor</strong>, pazarlama amacıyla paylaşmıyoruz. Veriler yalnızca hizmetin sunulması için gereken altyapı sağlayıcılarıyla paylaşılır:</p>
+<table>
+  <tr><th>Hizmet</th><th>Amaç</th><th>Gizlilik politikası</th></tr>
+  <tr>
+    <td>Supabase Inc.</td>
+    <td>Kimlik doğrulama, veritabanı ve senkronizasyon</td>
+    <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google Play</td>
+    <td>Uygulama dağıtımı ve uygulama içi satın alımlar</td>
+    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
+  </tr>
+</table>
+<p>Ayrıca yasal bir yükümlülüğe uymak veya haklarımızı korumak amacıyla, yetkili makamların usulüne uygun taleplerine yanıt olarak veri paylaşımı yapılabilir.</p>
+
+<h2>7. Verilerinizi Dışa Aktarma ve Paylaşma</h2>
+<p>Uygulama, seans kayıtlarınızı <strong>CSV</strong>, tüm verilerinizi <strong>JSON</strong> biçiminde dışa aktarmanıza olanak tanır (Ayarlar → Verilerin). Dosya cihazınızda oluşturulur ve yalnızca sizin seçtiğiniz uygulamayla paylaşılır; bu işlem sırasında veriler bize gönderilmez. Paylaştığınız içerik üzerinde, paylaşım gerçekleştikten sonra kontrolümüz bulunmaz.</p>
+
+<h2>8. Veri Silme</h2>
+<ul>
+  <li><strong>Cihazdaki veriyi silme:</strong> Ayarlar → Verilerin → "Bu cihazdaki verileri sil" ile yerel kayıtlarınızı silebilirsiniz. Uygulamayı kaldırdığınızda da tüm yerel veriler silinir.</li>
+  <li><strong>Hesabı silme:</strong> Ayarlar → Verilerin → "Hesabımı sil" ile hesabınızı ve sunucudaki tüm kayıtlarınızı (seans olayları, projeler, jeton kayıtları, abonelik satırı ve kimlik kaydınız) kalıcı olarak silebilirsiniz. Bu işlem geri alınamaz.</li>
+  <li>Uygulamaya erişiminiz yoksa, silme talebinizi <a href="account-deletion.html">hesap silme sayfamız</a> üzerinden iletebilirsiniz.</li>
+  <li>Silme işlemi anında uygulanır; altyapı sağlayıcımızın yedeklerinden tamamen kalkması en geç <strong>30 gün</strong> sürer.</li>
+</ul>
+
+<h2>9. Veri Saklama Süresi</h2>
+<p>Verileriniz, hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde yukarıdaki süreler geçerlidir. Yasal yükümlülükler gerektirdiğinde ilgili kayıtlar yasal süre boyunca saklanabilir.</p>
+
+<h2>10. Veri Güvenliği</h2>
+<p>Verilerinizi korumak için aktarımda HTTPS/TLS şifrelemesi, veritabanında satır düzeyinde erişim kontrolü (RLS) ve kimlik doğrulama uygularız. Yönetici anahtarları hiçbir zaman uygulamanın içinde bulunmaz. Buna karşın, hiçbir internet tabanlı aktarım veya elektronik saklama yönteminin mutlak güvenlik sağlayamayacağını belirtmek isteriz.</p>
+
+<h2>11. Haklarınız</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamında şu haklara sahipsiniz:</p>
+<ul>
+  <li>Verilerinizin işlenip işlenmediğini öğrenme ve bunlara erişme</li>
+  <li>Eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme</li>
+  <li>Verilerinizin silinmesini talep etme</li>
+  <li>Verilerinizi yapılandırılmış bir formatta alma (uygulama içi CSV/JSON dışa aktarma bu hakkı doğrudan karşılar)</li>
+  <li>İşlemeye itiraz etme ve rızanızı geri çekme</li>
+  <li>İlgili denetim otoritesine şikâyette bulunma</li>
+</ul>
+<p>Bu haklarınızı kullanmak için aşağıdaki e-posta adresinden bize ulaşabilirsiniz. Taleplere en geç 30 gün içinde yanıt veriyoruz.</p>
+
+<h2>12. Çocukların Gizliliği</h2>
+<p>Personal Pomodoro, 13 yaşın altındaki çocuklara yönelik olarak tasarlanmamıştır ve bu yaş grubundan bilerek kişisel veri toplamayız. 13 yaşın altındaki bir çocuğun bize kişisel veri sağladığını fark edersek, bu veriler derhal silinir. Böyle bir durumdan haberdarsanız lütfen bizimle iletişime geçin.</p>
+
+<h2>13. Politikadaki Değişiklikler</h2>
+<p>Bu politikayı zaman zaman güncelleyebiliriz. Uygulamaya yeni bir veri işleme faaliyeti eklenmesi hâlinde (örneğin reklam veya analitik), bu politika <strong>ilgili sürümle aynı anda</strong> güncellenir ve "Son güncelleme" tarihi değiştirilir. Önemli değişiklikler uygulama içinde de duyurulur.</p>
+
+<h2>14. İletişim</h2>
+<ul>
+  <li><strong>Veri sorumlusu:</strong> TechFidan Apps</li>
+  <li><strong>E-posta:</strong> <a href="mailto:techfidanapss@gmail.com">techfidanapss@gmail.com</a></li>
+</ul>
+
+<hr>
+
+<p class="lang-sep">English Version</p>
+
+<h2>Privacy Policy (English)</h2>
+<p>This policy explains how <strong>TechFidan Apps</strong> handles personal data in the <strong>Personal Pomodoro</strong> mobile application (the "App").</p>
+
+<p><strong>In short:</strong> the App is fully functional without an account, and in that mode no data ever leaves your device. Even with an account, your sessions and project names are backed up to the cloud <strong>only if you have a Premium subscription</strong>; on the free tier the only thing sent to our servers is your daily focus total, used to award in-app tokens. The App contains <strong>no advertising in this version</strong>, does not collect your advertising ID, and includes no analytics or tracking SDKs. Should advertising be introduced, this policy will be updated in the same release.</p>
+
+<h3>Using the App Without an Account</h3>
+<p>The timer, projects, statistics, plan board and streak tracking all work without signing in. In this mode your sessions, project names, settings and statistics are stored <strong>only in the local database on your device</strong>.</p>
+
+<h3>Data Collected When You Create an Account</h3>
+<ul>
+  <li><strong>Email address and password</strong> — for registration and sign-in. We cannot see your password; it is stored as a salted hash by our authentication provider.</li>
+  <li><strong>Daily focus total</strong> (free and Premium) — e.g. "85 minutes on 3 October", used solely to calculate your in-app token reward. Individual session times, timestamps and project names are not sent on the free tier.</li>
+  <li><strong>Token balance and transaction records</strong> — to operate the in-app reward system.</li>
+  <li><strong>Subscription status</strong> — tier and expiry date, once subscriptions are enabled.</li>
+  <li><strong>IP address</strong> — processed transiently when your device connects to our servers, for connectivity, security and abuse prevention.</li>
+</ul>
+
+<h3>Additional Data Synced With a Premium Subscription</h3>
+<p>Cloud backup is a Premium feature. With an active Premium subscription, the following are also stored on our servers:</p>
+<ul>
+  <li><strong>Focus session events</strong> — event type (started / completed / abandoned), planned duration, actual focused duration, timestamp, and the local calendar date derived from your device's time zone.</li>
+  <li><strong>Project names</strong> — free text you type, along with creation date and archive status. We recommend not putting personal information in project names.</li>
+</ul>
+
+<p>Your <strong>intention line</strong>, <strong>plan board</strong> items and all app settings remain on your device and are never transmitted.</p>
+
+<p>We do <strong>not</strong> collect: advertising identifiers, location, contacts, photos, files, microphone or camera data, health data, messages, crash logs or usage analytics.</p>
+
+<h3>Where Data Is Stored</h3>
+<p>Server-side data is held in a PostgreSQL database hosted by <strong>Supabase Inc.</strong>, with Row Level Security enabled on every table so each user can access only their own rows. On the free tier your sessions and projects exist only on your device. Supabase servers are located outside Türkiye, so creating an account involves an international transfer of the data listed above. You can avoid this entirely by using the App without an account.</p>
+
+<h3>Third Parties</h3>
+<p>We do not sell or share your personal data for marketing. Data is shared only with the infrastructure providers required to deliver the service: <strong>Supabase Inc.</strong> (authentication, database and sync — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">privacy policy</a>) and <strong>Google Play</strong> (app distribution and in-app purchases — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>).</p>
+
+<h3>Export and Sharing</h3>
+<p>You can export your sessions as <strong>CSV</strong> and all your data as <strong>JSON</strong> from Settings → Your data. The file is generated on your device and shared only with the app you choose; nothing is sent to us during this process.</p>
+
+<h3>Deleting Your Data</h3>
+<p>You can clear local data from Settings → Your data → "Delete data on this device", and permanently delete your account and all server-side records from Settings → Your data → "Delete my account". Deletion is immediate and irreversible; records are fully purged from our provider's backups within <strong>30 days</strong>. If you cannot access the App, you may submit a request via our <a href="account-deletion.html">account deletion page</a>.</p>
+
+<h3>Security</h3>
+<p>We use HTTPS/TLS encryption in transit, Row Level Security in the database, and authentication on every request. Administrative keys are never embedded in the App. No method of electronic transmission or storage is completely secure.</p>
+
+<h3>Your Rights</h3>
+<p>Under GDPR and Turkish Law No. 6698 (KVKK) you have the right to access, rectify, erase, restrict, object to the processing of, and port your personal data, and to lodge a complaint with a supervisory authority. Contact us at the address below; we respond within 30 days.</p>
+
+<h3>Children's Privacy</h3>
+<p>The App is not directed to children under 13 and we do not knowingly collect personal information from them. If we learn that we have, we delete it promptly.</p>
+
+<h3>Changes to This Policy</h3>
+<p>If a new data processing activity is added to the App (for example advertising or analytics), this policy will be updated in the <strong>same release</strong> and the "last updated" date revised.</p>
+
+<h3>Contact</h3>
+<p>TechFidan Apps — <a href="mailto:techfidanapss@gmail.com">techfidanapss@gmail.com</a></p>
+
+</main>
+
+<footer>
+  © 2026 TechFidan Apps · Personal Pomodoro
+</footer>
+
+</div>
+</body>
+</html>
