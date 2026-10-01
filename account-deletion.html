@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hesap ve Veri Silme — Personal Pomodoro</title>
+<style>
+  :root{
+    --bg:#fbfaf8; --surface:#ffffff; --text:#1f2328; --muted:#5c6470;
+    --accent:#c0392b; --border:#e6e3de; --soft:#f5f2ee;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#15171a; --surface:#1d2023; --text:#e8e6e3; --muted:#a2a8b0;
+           --accent:#e0675a; --border:#2d3135; --soft:#232629; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.7; font-size:16px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:16px;}
+  header{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:28px 26px; margin:24px 0 20px;
+  }
+  .badge{
+    display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); font-weight:700; margin-bottom:10px;
+  }
+  h1{font-size:26px; line-height:1.25; margin:0 0 8px;}
+  .meta{color:var(--muted); font-size:14px; margin:0;}
+  main{
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:8px 26px 28px;
+  }
+  h2{font-size:19px; margin:30px 0 10px;}
+  h3{font-size:16px; margin:22px 0 6px;}
+  ol,ul{padding-left:20px;}
+  li{margin:7px 0;}
+  .note{
+    background:var(--soft); border-left:3px solid var(--accent);
+    padding:14px 16px; border-radius:0 8px 8px 0; margin:18px 0; font-size:15px;
+  }
+  table{width:100%; border-collapse:collapse; margin:14px 0; font-size:15px;}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top;}
+  th{background:var(--soft); font-weight:600;}
+  a{color:var(--accent);}
+  hr{border:0; border-top:1px solid var(--border); margin:40px 0;}
+  footer{color:var(--muted); font-size:14px; text-align:center; padding:24px 0 40px;}
+  .lang-sep{
+    text-align:center; color:var(--muted); font-size:13px; letter-spacing:.1em;
+    text-transform:uppercase; margin:36px 0 0;
+  }
+  @media (max-width:520px){
+    h1{font-size:22px} header,main{padding-left:18px; padding-right:18px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="badge">Personal Pomodoro</div>
+  <h1>Hesap ve Veri Silme</h1>
+  <p class="meta">Son güncelleme: 1 Ekim 2026 &nbsp;·&nbsp; TechFidan Apps</p>
+</header>
+
+<main>
+
+<p>Bu sayfa, <strong>Personal Pomodoro</strong> uygulamasındaki hesabınızı ve verilerinizi nasıl sileceğinizi açıklar.</p>
+
+<h2>Yöntem 1 — Uygulama içinden (önerilen)</h2>
+<p>En hızlı yol budur ve talebiniz anında işlenir:</p>
+<ol>
+  <li>Personal Pomodoro uygulamasını açın</li>
+  <li>Alt menüden <strong>Ayarlar</strong> sekmesine gidin</li>
+  <li><strong>Hesap</strong> bölümünde <strong>"Hesabımı sil"</strong> seçeneğine dokunun</li>
+  <li>Onay ekranındaki uyarıyı okuyup işlemi onaylayın</li>
+</ol>
+<p>Hesabınız ve sunucudaki tüm kayıtlarınız silinir, oturumunuz kapatılır.</p>
+
+<h2>Yöntem 2 — E-posta ile</h2>
+<p>Uygulamaya erişiminiz yoksa (örneğin cihazınızı kaybettiyseniz), silme talebinizi e-posta ile iletebilirsiniz:</p>
+<ul>
+  <li><strong>Adres:</strong> <a href="mailto:techfidanapss@gmail.com?subject=Hesap%20Silme%20Talebi">techfidanapss@gmail.com</a></li>
+  <li><strong>Konu:</strong> Hesap Silme Talebi</li>
+  <li><strong>Mesaj:</strong> Hesabınızı oluştururken kullandığınız e-posta adresini belirtin</li>
+</ul>
+<div class="note">
+  Güvenliğiniz için talebi, <strong>hesabınıza kayıtlı e-posta adresinden</strong> göndermenizi rica ederiz. Farklı bir adresten gelen talepleri doğrulayamadığımız için işleme alamıyoruz. Talepler en geç <strong>30 gün</strong> içinde sonuçlandırılır.
+</div>
+
+<h2>Silinen ve Saklanan Veriler</h2>
+<table>
+  <tr><th>Veri</th><th>Hesap silindiğinde</th></tr>
+  <tr><td>E-posta adresi ve kimlik kaydı</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Odak seansı kayıtları</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Proje adları</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Jeton bakiyesi ve işlem geçmişi</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Abonelik kaydı</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Cihazınızdaki yerel veriler</td><td>Uygulamayı kaldırdığınızda veya Ayarlar → Veri bölümünden silebilirsiniz</td></tr>
+  <tr><td>Satın alma kayıtları (Google Play)</td><td>Google Play tarafında tutulur; mali mevzuat gereği bizim erişimimizde değildir</td></tr>
+</table>
+
+<p>Silme işlemi anında uygulanır. Altyapı sağlayıcımızın sistem yedeklerinden tamamen kalkması en geç <strong>30 gün</strong> sürer; bu süre boyunca yedekler yalnızca felaket kurtarma amacıyla tutulur ve erişilmez.</p>
+
+<div class="note">
+  <strong>Önemli:</strong> Hesap silme geri alınamaz. İstatistiklerinizi saklamak istiyorsanız, silmeden önce Ayarlar → Veri bölümünden <strong>CSV veya JSON olarak dışa aktarın</strong>.
+</div>
+
+<h2>Aktif Aboneliğiniz Varsa</h2>
+<p>Hesabınızı silmek, Google Play üzerinden alınmış bir aboneliği otomatik olarak iptal etmez. Aboneliğinizi <strong>Google Play Store → Profil → Ödemeler ve abonelikler</strong> yolundan ayrıca iptal etmeniz gerekir.</p>
+
+<p>Gizlilik uygulamalarımızın tamamı için <a href="index.html">Gizlilik Politikası</a> sayfasına bakabilirsiniz.</p>
+
+<hr>
+
+<p class="lang-sep">English Version</p>
+
+<h2>Account and Data Deletion (English)</h2>
+<p>This page explains how to delete your account and data in <strong>Personal Pomodoro</strong>.</p>
+
+<h3>Option 1 — In the app (recommended)</h3>
+<ol>
+  <li>Open Personal Pomodoro</li>
+  <li>Go to the <strong>Settings</strong> tab</li>
+  <li>Under <strong>Account</strong>, tap <strong>"Delete my account"</strong></li>
+  <li>Read the warning and confirm</li>
+</ol>
+<p>Your account and all server-side records are deleted immediately and you are signed out.</p>
+
+<h3>Option 2 — By email</h3>
+<p>If you cannot access the app, email <a href="mailto:techfidanapss@gmail.com?subject=Account%20Deletion%20Request">techfidanapss@gmail.com</a> with the subject "Account Deletion Request", stating the email address used for your account. For security, please send the request <strong>from the email address registered to the account</strong> — we cannot verify requests from other addresses. Requests are completed within 30 days.</p>
+
+<h3>What Is Deleted</h3>
+<p>Permanently deleted: your email address and identity record, focus session records, project names, token balance and transaction history, and your subscription record. Local data on your device is removed when you uninstall the app, or from Settings → Data. Purchase records held by Google Play remain with Google under financial record-keeping requirements and are outside our control.</p>
+
+<p>Deletion takes effect immediately; records are fully purged from our provider's system backups within <strong>30 days</strong>, during which backups are retained solely for disaster recovery and are not accessible.</p>
+
+<p><strong>Important:</strong> deletion is irreversible. If you want to keep your statistics, export them as CSV or JSON from Settings → Data before deleting.</p>
+
+<h3>Active Subscriptions</h3>
+<p>Deleting your account does not cancel a subscription purchased through Google Play. Cancel it separately via <strong>Google Play Store → Profile → Payments and subscriptions</strong>.</p>
+
+<p>See our <a href="index.html">Privacy Policy</a> for full details of our data practices.</p>
+
+</main>
+
+<footer>
+  © 2026 TechFidan Apps · Personal Pomodoro
+</footer>
+
+</div>
+</body>
+</html>
