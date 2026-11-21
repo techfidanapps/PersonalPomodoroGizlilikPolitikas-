@@ -64,7 +64,7 @@
 <header>
   <div class="badge">Personal Pomodoro</div>
   <h1>Gizlilik Politikası</h1>
-  <p class="meta">Son güncelleme: 7 Ekim 2026 &nbsp;·&nbsp; Yürürlük tarihi: 7 Ekim 2026</p>
+  <p class="meta">Son güncelleme: 21 Kasım 2026 &nbsp;·&nbsp; Yürürlük tarihi: 7 Ekim 2026</p>
 </header>
 
 <main>
@@ -72,7 +72,7 @@
 <p>Bu gizlilik politikası, <strong>TechFidan Apps</strong> tarafından geliştirilen <strong>Personal Pomodoro</strong> mobil uygulamasının ("Uygulama") kişisel verileri nasıl işlediğini açıklar.</p>
 
 <div class="note">
-  <strong>Özet:</strong> Uygulama hesap açmadan tam olarak çalışır ve bu durumda hiçbir veriniz cihazınızdan çıkmaz. Hesap açsanız bile, seanslarınız ve proje adlarınız <strong>yalnızca Premium üyeliğiniz varsa</strong> buluta yedeklenir; ücretsiz kullanımda sunucuya giden tek şey, jeton hesabı için günlük toplam odak dakikanızdır. Uygulama <strong>ücretsiz kullanıcılara reklam gösterir</strong> (Google AdMob); bu amaçla cihazınızın reklam kimliği (Advertising ID) kullanılır ve reklamlar şu anda kişiselleştirilmemiş gösterilir. Premium üyelerde reklam gösterilmez. Uygulama analitik veya izleme araçları kullanmaz (bkz. madde 2.6).
+  <strong>Özet:</strong> Uygulama hesap açmadan tam olarak çalışır ve bu durumda hiçbir veriniz cihazınızdan çıkmaz. Hesap açsanız bile, seanslarınız ve proje adlarınız <strong>yalnızca Premium üyeliğiniz varsa</strong> buluta yedeklenir; ücretsiz kullanımda sunucuya giden tek şey, jeton hesabı için günlük toplam odak dakikanızdır. Uygulama <strong>ücretsiz kullanıcılara reklam gösterir</strong> (Google AdMob); bu amaçla cihazınızın reklam kimliği (Advertising ID) kullanılır ve reklamlar şu anda kişiselleştirilmemiş gösterilir. Premium üyelerde reklam gösterilmez. Uygulama çöktüğünde, hatayı düzeltebilmemiz için kişisel bilgi içermeyen bir çökme raporu gönderilir (Firebase Crashlytics). Uygulama analitik veya izleme araçları kullanmaz (bkz. madde 2.6 ve 2.7).
 </div>
 
 <h2>1. Hesap Açmadan Kullanım</h2>
@@ -102,6 +102,8 @@
 <ul>
   <li><strong>Jeton bakiyesi ve işlem kayıtları:</strong> Uygulama içi ödül ekonomisinin işleyebilmesi için.</li>
   <li><strong>Abonelik durumu:</strong> Üyelik katmanı ve bitiş tarihi (abonelik özelliği etkinleştirildiğinde).</li>
+  <li><strong>Satın alınan eşyalar:</strong> Marketten jetonla aldığınız oda eşyaları ve renkler, satın alma zamanıyla birlikte.</li>
+  <li><strong>Oda ve persona durumu:</strong> Telefon değiştirdiğinizde veya uygulamayı yeniden yüklediğinizde odanızın ve karakterinizin kaybolmaması için yedeklenir. İçeriği: seçtiğiniz karakter ve ona verdiğiniz ad, size hitap edilecek takma ad, karakterinizle paylaştığınız hedef (hayaliniz, hazırlandığınız sınav ve tarihi, motivasyonunuz), çalışma tarzı tercihiniz, evcil hayvanınızın adı, odadaki eşyaların konumları ve seçili renkler/stiller. Hedef ve takma ad sizin yazdığınız serbest metinlerdir; buraya hassas bilgi yazmamanızı öneririz.</li>
 </ul>
 
 <h3>2.5 Sunucuya hiçbir koşulda gönderilmeyen veriler</h3>
@@ -121,8 +123,11 @@
   <li>Avrupa Ekonomik Alanı'ndaki kullanıcılara Google'ın onay penceresi (UMP) gösterilir; tercihlerinizi buradan yönetebilirsiniz.</li>
 </ul>
 
+<h3>2.7 Çökme raporları</h3>
+<p>Uygulama beklenmedik şekilde kapanırsa, hatayı bulup düzeltebilmemiz için <strong>Google Firebase Crashlytics</strong> aracılığıyla bir çökme raporu gönderilir. Bu, hesap açıp açmadığınızdan bağımsız olarak çalışır. Rapor şunları içerir: hatanın oluştuğu kod konumu, cihaz modeli, işletim sistemi sürümü, uygulama sürümü, çökme zamanı ve uygulamanın bu kurulumuna ait rastgele oluşturulmuş bir kimlik. E-posta adresiniz, seanslarınız, proje adlarınız, hedefleriniz veya reklam kimliğiniz bu rapora <strong>eklenmez</strong>. Çökme raporları Google tarafından en fazla 90 gün saklanır.</p>
+
 <div class="note">
-  <strong>Toplamadığımız veriler:</strong> Konum (GPS veya ağ tabanlı), rehber, fotoğraf ve galeri, dosyalar, mikrofon, kamera, sağlık verileri, mesajlar, çökme raporları ve kullanım analitiği. Uygulamada analitik veya izleme SDK'si bulunmamaktadır. Reklam kimliği yalnızca yukarıda açıklandığı şekilde reklam gösterimi için kullanılır.
+  <strong>Toplamadığımız veriler:</strong> Konum (GPS veya ağ tabanlı), rehber, fotoğraf ve galeri, dosyalar, mikrofon, kamera, sağlık verileri, mesajlar ve kullanım analitiği. Uygulamada analitik veya izleme SDK'si bulunmamaktadır. Reklam kimliği yalnızca yukarıda açıklandığı şekilde reklam gösterimi için kullanılır.
 </div>
 
 <h2>3. Uygulamanın Kullandığı İzinler</h2>
@@ -145,6 +150,8 @@
   <tr><td>Abonelik durumu</td><td>Premium özelliklere erişim yetkilendirmesi</td><td>Sözleşmenin ifası</td></tr>
   <tr><td>IP adresi (geçici)</td><td>Sunucu bağlantısı, güvenlik ve kötüye kullanımın önlenmesi</td><td>Meşru menfaat</td></tr>
   <tr><td>Reklam kimliği (yalnızca ücretsiz kullanıcı)</td><td>Reklam gösterimi (Google AdMob)</td><td>Açık rıza (AEA'da onay penceresi) / meşru menfaat</td></tr>
+  <tr><td>Satın alınan eşyalar, oda ve persona durumu</td><td>Satın alımlarınızın ve odanızın cihaz değişikliğinde korunması</td><td>Sözleşmenin ifası</td></tr>
+  <tr><td>Çökme raporları</td><td>Uygulama hatalarının tespit edilip düzeltilmesi</td><td>Meşru menfaat</td></tr>
 </table>
 
 <h2>5. Veriler Nerede Saklanıyor</h2>
@@ -155,7 +162,7 @@
 </ul>
 
 <h2>6. Üçüncü Taraflar</h2>
-<p>Kişisel verilerinizi <strong>satmıyoruz</strong>. Veriler yalnızca hizmetin sunulması için gereken altyapı ve reklam sağlayıcılarıyla paylaşılır; reklam kimliğiniz reklam gösterimi amacıyla Google AdMob ile paylaşılır:</p>
+<p>Kişisel verilerinizi <strong>satmıyoruz</strong>. Veriler yalnızca hizmetin sunulması için gereken altyapı, reklam ve çökme raporu sağlayıcılarıyla paylaşılır; reklam kimliğiniz reklam gösterimi amacıyla Google AdMob ile paylaşılır:</p>
 <table>
   <tr><th>Hizmet</th><th>Amaç</th><th>Gizlilik politikası</th></tr>
   <tr>
@@ -172,6 +179,11 @@
     <td>Google AdMob</td>
     <td>Reklam gösterimi (reklam kimliği ve cihaz bilgileri)</td>
     <td><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a></td>
+  </tr>
+  <tr>
+    <td>Google Firebase Crashlytics</td>
+    <td>Çökme raporları (kişisel bilgi içermez)</td>
+    <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></td>
   </tr>
 </table>
 <p>Ayrıca yasal bir yükümlülüğe uymak veya haklarımızı korumak amacıyla, yetkili makamların usulüne uygun taleplerine yanıt olarak veri paylaşımı yapılabilir.</p>
@@ -224,7 +236,7 @@
 <h2>Privacy Policy (English)</h2>
 <p>This policy explains how <strong>TechFidan Apps</strong> handles personal data in the <strong>Personal Pomodoro</strong> mobile application (the "App").</p>
 
-<p><strong>In short:</strong> the App is fully functional without an account, and in that mode no data ever leaves your device. Even with an account, your sessions and project names are backed up to the cloud <strong>only if you have a Premium subscription</strong>; on the free tier the only thing sent to our servers is your daily focus total, used to award in-app tokens. The App <strong>shows ads to free-tier users</strong> (Google AdMob), which uses your device's advertising ID; ads are currently shown non-personalized, and Premium subscribers see no ads. The App includes no analytics or tracking SDKs.</p>
+<p><strong>In short:</strong> the App is fully functional without an account, and in that mode no data ever leaves your device. Even with an account, your sessions and project names are backed up to the cloud <strong>only if you have a Premium subscription</strong>; on the free tier the only thing sent to our servers is your daily focus total, used to award in-app tokens. The App <strong>shows ads to free-tier users</strong> (Google AdMob), which uses your device's advertising ID; ads are currently shown non-personalized, and Premium subscribers see no ads. If the App crashes, a crash report containing no personal information is sent via Firebase Crashlytics so we can fix the problem. The App includes no analytics or tracking SDKs.</p>
 
 <h3>Using the App Without an Account</h3>
 <p>The timer, projects, statistics, plan board and streak tracking all work without signing in. In this mode your sessions, project names, settings and statistics are stored <strong>only in the local database on your device</strong>.</p>
@@ -235,6 +247,8 @@
   <li><strong>Daily focus total</strong> (free and Premium) — e.g. "85 minutes on 3 October", used solely to calculate your in-app token reward. Individual session times, timestamps and project names are not sent on the free tier.</li>
   <li><strong>Token balance and transaction records</strong> — to operate the in-app reward system.</li>
   <li><strong>Subscription status</strong> — tier and expiry date, once subscriptions are enabled.</li>
+  <li><strong>Purchased items</strong> — room items and colors you bought with tokens, with the purchase time.</li>
+  <li><strong>Room and persona state</strong> — backed up so your room and character survive a phone change or reinstall: the character you chose and the name you gave it, the nickname it calls you, the goal you shared with it (your dream, the exam you are preparing for and its date, your motivation), your study-style preference, your pet's name, item positions in the room and selected colors/styles. Goals and nicknames are free text; we recommend not entering sensitive information.</li>
   <li><strong>IP address</strong> — processed transiently when your device connects to our servers, for connectivity, security and abuse prevention.</li>
 </ul>
 
@@ -256,13 +270,16 @@
   <li>Users in the European Economic Area are shown Google's consent prompt (UMP), where you can manage your choices.</li>
 </ul>
 
-<p>We do <strong>not</strong> collect: location, contacts, photos, files, microphone or camera data, health data, messages, crash logs or usage analytics. The advertising ID is used only for ad delivery as described above.</p>
+<h3>Crash Reports</h3>
+<p>If the App closes unexpectedly, a crash report is sent through <strong>Google Firebase Crashlytics</strong> so we can find and fix the problem, whether or not you have an account. It contains the code location of the error, device model, operating system version, app version, time of the crash and a randomly generated identifier for this installation. Your email address, sessions, project names, goals and advertising ID are <strong>not</strong> included. Crash reports are retained by Google for up to 90 days.</p>
+
+<p>We do <strong>not</strong> collect: location, contacts, photos, files, microphone or camera data, health data, messages or usage analytics. The advertising ID is used only for ad delivery as described above.</p>
 
 <h3>Where Data Is Stored</h3>
 <p>Server-side data is held in a PostgreSQL database hosted by <strong>Supabase Inc.</strong>, with Row Level Security enabled on every table so each user can access only their own rows. On the free tier your sessions and projects exist only on your device. Supabase servers are located outside Türkiye, so creating an account involves an international transfer of the data listed above. You can avoid this entirely by using the App without an account.</p>
 
 <h3>Third Parties</h3>
-<p>We do not sell your personal data. Data is shared only with the providers required to deliver the service: <strong>Supabase Inc.</strong> (authentication, database and sync — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">privacy policy</a>), <strong>Google Play</strong> (app distribution and in-app purchases — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>) and <strong>Google AdMob</strong> (ad delivery; your advertising ID is shared for this purpose — <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses data</a>).</p>
+<p>We do not sell your personal data. Data is shared only with the providers required to deliver the service: <strong>Supabase Inc.</strong> (authentication, database and sync — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">privacy policy</a>), <strong>Google Play</strong> (app distribution and in-app purchases — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>), <strong>Google AdMob</strong> (ad delivery; your advertising ID is shared for this purpose — <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses data</a>) and <strong>Google Firebase Crashlytics</strong> (crash reporting, no personal information — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">privacy policy</a>).</p>
 
 <h3>Export and Sharing</h3>
 <p>You can export your sessions as <strong>CSV</strong> and all your data as <strong>JSON</strong> from Settings → Your data. The file is generated on your device and shared only with the app you choose; nothing is sent to us during this process.</p>
